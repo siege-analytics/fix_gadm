@@ -8,12 +8,17 @@ __email__ = "dheeraj@siegeanalytics.com"
 __status__ = "Production"
 
 
-
 # imports
 
+from utilities import *
+from settings import *
+import logging
 import pathlib
-
 import geopandas as gpd
+
+
+if __name__ == "__main__":
+    logging.info("Step 3: Generate JSON of GADM Layers and Columns")
 
 # CONSTANTS AND MAGICS
 
