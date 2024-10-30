@@ -10,5 +10,8 @@ generate_layer_names_and_columns:
 replace_null_values_in_selected_columns:
 		python code/python/4_replace_null_values_in_selected_columns.py
 
+corrected_file_generate_layer_names_and_columns:
+		python code/python/5_generate_layer_names_and_columns_from_fixed.py
+
 
 

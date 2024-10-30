@@ -35,8 +35,8 @@ def generate_layers_and_attributes(target_gpkg, target_json):
 if __name__ == "__main__":
 
 
-    logging.info("Step 3: Generate JSON of GADM Layers and Columns")
-    generate_layers_and_attributes(target_gpkg=GADM_GPKG, target_json=ORIGINAL_GPKG_LAYERS_AND_ATTRIBUTES)
+    logging.info("Step 5: Generate JSON of GADM Layers and Columns of Corrected File")
+    generate_layers_and_attributes(target_gpkg=GADM_GPKG_CORRECTED, target_json=CORRECTED_GPKG_LAYERS_AND_ATTRIBUTES)
 
 
 

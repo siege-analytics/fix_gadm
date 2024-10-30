@@ -45,11 +45,6 @@ def replace_null_values_in_selected_columns(source_gpkg, target_gpkg):
     
 if __name__ == "__main__":
 
-    # CONSTANTS AND MAGICS
-
-    GADM_GPKG = VECTOR_SPATIAL_DATA_SUBDIRECTORY / 'gadm_410-levels' / 'gadm_410-levels.gpkg'
-    GADM_GPKG_CORRECTED = VECTOR_SPATIAL_DATA_SUBDIRECTORY / 'gadm_410-levels' / 'gadm_410-levels-nulls_fixed.gpkg'
-
     logging.info("Step 4: Replace Null Values in GADM Foreign Key Columns")
     replace_null_values_in_selected_columns(source_gpkg=GADM_GPKG, target_gpkg=GADM_GPKG_CORRECTED)
 

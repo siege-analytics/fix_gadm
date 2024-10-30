@@ -47,6 +47,12 @@ REQUIRED_PATHS = [
 
 GADM_URL = "https://geodata.ucdavis.edu/gadm/gadm4.1/gadm_410-levels.zip"
 
+GADM_GPKG = VECTOR_SPATIAL_DATA_SUBDIRECTORY / 'gadm_410-levels' / 'gadm_410-levels.gpkg'
+GADM_GPKG_CORRECTED = VECTOR_SPATIAL_DATA_SUBDIRECTORY / 'gadm_410-levels' / 'gadm_410-levels-nulls_fixed.gpkg'
+
+ORIGINAL_GPKG_LAYERS_AND_ATTRIBUTES = OUTPUT_DIRECTORY / 'original_gpkg_layers_and_attributes.json'
+CORRECTED_GPKG_LAYERS_AND_ATTRIBUTES = OUTPUT_DIRECTORY / 'fixed_gpkg_layers_and_attributes.json'
+
 GADM_MODEL_FIELD_NAMES = [
     "GID_0",
     "GID_1",
@@ -55,3 +61,4 @@ GADM_MODEL_FIELD_NAMES = [
     "GID_4",
     "GID_5",
 ]
+
