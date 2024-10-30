@@ -31,15 +31,7 @@ def generate_layers_and_attributes(target_gpkg, target_json):
     
     with open(LAYERS_AND_ATTRIBUTES, 'w') as json_file:
         json.dump(layer_name_and_attributes, json_file, indent=4)
-
-
     
-
-
-
-
-
-
 if __name__ == "__main__":
 
     # CONSTANTS AND MAGICS

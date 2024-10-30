@@ -7,8 +7,8 @@ download_and_unzip_gadm:
 generate_layer_names_and_columns:
 		python code/python/3_generate_layer_names_and_columns.py
 
-python_translate_rasters:
-		python code/python/4_python_translate_rasters.py
+replace_null_values_in_selected_columns:
+		python code/python/4_replace_null_values_in_selected_columns.py
 
 
 

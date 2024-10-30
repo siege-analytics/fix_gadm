@@ -46,3 +46,12 @@ REQUIRED_PATHS = [
 ]
 
 GADM_URL = "https://geodata.ucdavis.edu/gadm/gadm4.1/gadm_410-levels.zip"
+
+GADM_MODEL_FIELD_NAMES = [
+    "GID_0",
+    "GID_1",
+    "GID_2",
+    "GID_3",
+    "GID_4",
+    "GID_5",
+]
