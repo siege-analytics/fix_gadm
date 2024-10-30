@@ -1,0 +1,18 @@
+../
+.git/
+| hooks/
+| logs/
+| objects/
+| rebase-merge/
+| refs/
+| rr-cache/
+| AUTO_MERGE
+| COMMIT_EDITMSG
+| FETCH_HEAD
+| HEAD
+| MERGE_MSG
+| MERGE_RR
+| ORIG_HEAD
+| REBASE_HEAD
+| config
+| index
