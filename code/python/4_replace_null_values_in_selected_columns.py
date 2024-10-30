@@ -25,16 +25,18 @@ def replace_null_values_in_selected_columns(source_gpkg, target_gpkg):
         gadm_layers = gpd.list_layers(source_gpkg)['name'].tolist()
         
         for g in gadm_layers:
+            logging.info(f"Working on layer: {g}")
 
             gdf = gpd.read_file(source_gpkg,layer=g)
+            logging.info(f"Layer {g} has columns: {list(gdf)}")
 
             for gmfn in GADM_MODEL_FIELD_NAMES:
                 if gmfn in list(gdf):
                     message = f"Layer {g} has a column that needs to be fixed: {gmfn}"
                     logging.info(message)
-                    gdf[g] = gdf[g].replace("NA", np.nan)
+                    gdf[gmfn] = gdf[gmfn].replace("NA", np.nan)
 
-                    result = gdf.to_file("output.json", driver="GeoJSON", layer=g)
+                    result = gdf.to_file(target_gpkg, driver='GPKG', layer=g)
                 else:
                     pass
     except Exception as e:
